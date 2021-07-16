@@ -1,0 +1,52 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "Bio",
+      "author": [],
+      "contents": "\n\nContents\nHello!\nTechnology\nSelected Coursework\nResume\n\n\n\n\nHello!\nMy name is John Kim, and I was born and raised in Los Angeles, California. My hobbies include traveling, watching eSports (#C9WIN), learning Japanese, and seeking out delicious new places to eat throughout SoCal and the East Coast. I also love to sing, even though I’m not any good at it! Feel free to ask me about my favorite restaurants (or, check out my gallery of my favorite foodie moments here!)\nTechnology\nR, Java, Python\nSelected Coursework\nECO310 - Microeconomic Theory: A Mathematical Approach\nECO312 - Econometrics: A Mathematical Approach\nPOL346 - Applied Quantitative Analysis\nPOL349 - Political Economy\nCOS226 - Algorithms and Data Structures\nCOS324 - Introduction to Machine Learning\nResume\nA copy of my resume can be found below:\n\n\n\n\n\n",
+      "last_modified": "2021-06-30T14:13:08-05:00"
+    },
+    {
+      "path": "coding.html",
+      "title": "Coding",
+      "description": "A portolio of selected programming projects I've completed.\n",
+      "author": [],
+      "contents": "\n\nContents\nPrinceton Room Draw 2021\n\nPrinceton Room Draw 2021\nA simple web app for Princeton’s annual dorm selection lottery, updated to reflect room changes and additional student populations during COVID-19. Original dorm listings published by Princeton Housing used an unorganized pdf of room listings; this web app simplified the process by allowing sorting by room type, square footage, and college affiliation, as well as allowing students to check their status in the lottery.\nWith the end of Room Draw in June, app is no longer in development; current deployment displays model rooms and removes student ID functionality to preserve privacy. Heroku deployment available here.\n\n\n\n",
+      "last_modified": "2021-06-30T09:59:57-05:00"
+    },
+    {
+      "path": "data_analysis.html",
+      "title": "Data Analysis",
+      "description": "A portolio of selected data projects I've completed.\n",
+      "author": [],
+      "contents": "\n\nContents\nEx Ante Moral Hazard in Health Insurance\n\nEx Ante Moral Hazard in Health Insurance\n\nLogistic Regression for Models, Odds (Column 3 is Full Model)\n\n\n\n\n\n\nDependent variable:\n\n\n\n\n\n\n\n\ndrugUse\n\n\n\n\n(1)\n\n\n(2)\n\n\n(3)\n\n\n(4)\n\n\n\n\ninsurance\n\n\n0.714** (0.097)\n\n\n0.751* (0.110)\n\n\n0.802 (0.127)\n\n\n0.637** (0.132)\n\n\nprevDrugUse\n\n\n\n\n4.449*** (0.639)\n\n\n3.984*** (0.604)\n\n\n2.907*** (0.690)\n\n\nI(insurance * prevDrugUse)\n\n\n\n\n\n\n\n\n1.688* (0.520)\n\n\nhispanic\n\n\n\n\n\n\n0.717 (0.163)\n\n\n0.728 (0.165)\n\n\nwhite\n\n\n\n\n\n\n1.976 (0.823)\n\n\n2.044* (0.856)\n\n\nblack\n\n\n\n\n\n\n0.528 (0.232)\n\n\n0.548 (0.242)\n\n\nnative\n\n\n\n\n\n\n1.262 (0.445)\n\n\n1.268 (0.448)\n\n\nasian\n\n\n\n\n\n\n1.320 (0.650)\n\n\n1.326 (0.657)\n\n\nchristian\n\n\n\n\n\n\n0.645*** (0.105)\n\n\n0.650*** (0.106)\n\n\nmuslim\n\n\n\n\n\n\n0.00000 (0.001)\n\n\n0.00000 (0.001)\n\n\nbuddhist\n\n\n\n\n\n\n0.576 (0.761)\n\n\n0.546 (0.728)\n\n\nmale\n\n\n\n\n\n\n1.783*** (0.272)\n\n\n1.815*** (0.278)\n\n\nincome\n\n\n\n\n\n\n0.984 (0.029)\n\n\n0.985 (0.029)\n\n\nstress\n\n\n\n\n0.944 (0.061)\n\n\n0.993 (0.070)\n\n\n0.999 (0.070)\n\n\nage\n\n\n\n\n\n\n1.067 (0.046)\n\n\n1.065 (0.046)\n\n\nConstant\n\n\n0.899 (0.095)\n\n\n0.500*** (0.080)\n\n\n0.055** (0.074)\n\n\n0.063** (0.086)\n\n\n\n\nObservations\n\n\n935\n\n\n935\n\n\n935\n\n\n935\n\n\n\n\nNote:\n\n\n*p<0.1; **p<0.05; ***p<0.01\n\n\nANOVA Test: Full Model vs. Full Model + Interaction Term\n\n\n\n\nResid. Df\n\n\nResid. Dev\n\n\nDf\n\n\nDeviance\n\n\nPr(>Chi)\n\n\n1\n\n\n920\n\n\n1073.88\n\n\n\n\n\n\n\n\n2\n\n\n919\n\n\n1070.97\n\n\n1\n\n\n2.91\n\n\n0.0895\n\nUsing data from the National Longitudinal Study of Adolescent to Adult Health (Add Health), I use Covariate Balancing Propensity Score matching (Imai and Ratkovic, 2014) alongside logistic regression to evaluate whether gaining health insurance was associated with any increase in illegal drug use, a common form of risky health behavior, among American adults. I find that gaining health insurance was not associated with any increase in odds of illegal drug use at a statistically significant level (\\(p>0.1\\)), controlling for previous drug use, stress, income, race, sex, and age. Using an analysis-of-variance (ANOVA) test, I conclude that models with interaction terms do not explain more variation at a statistically significant level (\\(Chi>0.08\\)).\n\n\n\n",
+      "last_modified": "2021-06-30T14:10:00-05:00"
+    },
+    {
+      "path": "experience.html",
+      "title": "Experience",
+      "description": "My professional experiences, displayed in a professional format. \n",
+      "author": [],
+      "contents": "\n\nContents\nProfessional\nTexas Office of the Attorney General\nIssueVoter\n\nTeaching\n\nProfessional\nTexas Office of the Attorney General\nI worked in the Texas Attorney General’s office as part of its nonpartisan Consumer Protection Division. There, I published privileged research and reports involving advertising technology and consumer data protection. To this end, I compiled, interpreted, and presented technical codebases, documentations, and expert statements/depositions on behalf of a lay audience of assistant attorneys general regarding ongoing confidential litigation in the tech industry. Specific issues I worked on include cryptography, protected categories in unsupervised clustering, privacy-utility optimization, and data protection in machine learning.\nIssueVoter\nI previously worked at IssueVoter as a Business Development Intern, where I managed IssueVoter’s CRM platform on Airtable and helped launch its civic engagement workshop series. I also authored several bill summaries, direct pieces of content launched on the IssueVoter website.\nTeaching\nI am currently an Undergraduate Course Assistant for Princeton’s Department of Economics, where I TA for ECO310 - Microeconomic Theory: A Mathematical Approach under Professor Can Urgun.\nI was previously an official course tutor for Princeton University courses through the McGraw Center for Teaching and Learning. I tutored for MAT175 - Mathematics for Economics/Life Sciences and POL345 - Introduction to Quantitative Social Science.\n\n\n\n",
+      "last_modified": "2021-07-16T12:16:35-05:00"
+    },
+    {
+      "path": "index.html",
+      "title": "John Kim",
+      "description": "Politics buff, aspiring technologist, and foodie!\n",
+      "author": [],
+      "contents": "\n\n\n\nAt a Glance\nI am a student at Princeton University studying political economy and technology. I am particularly interested in quantitative and computational social science, with applications to machine learning, causal inference, and technology policy.\nI most recently served as a Consumer Protection Intern at the Texas Office of the Attorney General.\nFor more about me, see my bio.\nAcademic\nA.B. Economics, Princeton University ’23\nProgram in Political Economy, Departments of Politics & Economics\nCertificate in Applications of Computing, Department of Computer Science\nSemester Student, Pembroke College @ Cambridge University ’22\nFaculties of Economics & Human, Social, and Political Sciences\nAwards and Fellowships\n2021: Public Interest Technology Fellow, Center for Information Technology Policy\nFully funded program to gain first-hand experience in technology policy. Includes a training bootcamp in technology policy, placement in a government agency working on public interest technology, and a stipend.\n2020: Osawa Fellow, Princeton in Asia\nFully funded program to live and teach English in Tokyo, Japan on behalf of various schools and businesses, as well as a stipend for independent travel around Japan. Rescinded due to COVID-19.\n2019: QuestBridge Match Scholar, QuestBridge\nScholarship program for low-income, high-achieving high school students to attend top universities across the US. Provided admission and scholarship to attend Princeton University, valued at $200k+.\n\n\n\n",
+      "last_modified": "2021-07-16T12:16:27-05:00"
+    },
+    {
+      "path": "other.html",
+      "title": "Other",
+      "description": "Some other cool stuff that I work on that I'm proud of!\n",
+      "author": [],
+      "contents": "\n\nContents\nPrinceton University Nonprofit Consulting\nThe Citizens’ Campaign\nAspire Coffeeworks\n\nPrinceton Model Congress\nRehack\n\nPrinceton University Nonprofit Consulting\n\nI am currently a consultant for PUNC. Each semester, 6-8 other team members and I work with a nonprofit organization in pro bono consulting work, concluding with a project presentation to both the nonprofit and the entire PUNC club. See organizations I’ve worked with below.\nThe Citizens’ Campaign\nWe helped the Citizens’ Campaign release their civic engagement curriculum. This primarily consisted of designing and analyzing a survey to local community college professors regarding implementing the curriculum.\nAspire Coffeeworks\nWe helped Aspire Coffeeworks market their product to the Chicagoland area. This included a complete redesign of their branding, competitor analysis, pitching to local stores, and researching entryways into online markets.\nPrinceton Model Congress\n\nAmerica’s oldest model congress conference held in Washington DC. As one of PMC’s elected Directors of Administration for two years, I am in charge of conference logistics running up to and day-of the event. For 2020, I (along with my fellow DAs) were able to successfully plan and execute Princeton Model Congress 2020 virtually using the Attendify platform.\nRehack\n\nThe first-ever reverse hackathon, emphasizing a beginner-friendly approach where competitors redesign and implement existing tech in a more meaningful, socially responsible way. For Rehack’s virtual hackathons in 2020 and 2021, I led marketing to bring West Coast universities to Rehack for the first time. As a result, 9 West Coast universities fielded at least one team to compete at Rehack for the first time.\n\n\n\n",
+      "last_modified": "2021-06-30T14:09:16-05:00"
+    }
+  ],
+  "collections": []
+}
