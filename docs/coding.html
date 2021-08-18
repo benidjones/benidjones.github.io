@@ -2436,13 +2436,28 @@ Projects
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
+<li><a href="#austin-bikeshare">Austin Bikeshare</a></li>
 <li><a href="#princeton-room-draw-2021">Princeton Room Draw 2021</a></li>
+<li><a href="#kaggle-tabular-playground-series-july-2021">Kaggle Tabular Playground Series July 2021</a></li>
+<li><a href="#seam-carver">Seam Carver</a></li>
 </ul>
 </nav>
 </div>
+<h3 id="austin-bikeshare">Austin Bikeshare</h3>
+<div class="layout-chunk" data-layout="l-body">
+<iframe src="https://benidjones.shinyapps.io/austin_bikeshare/?showcase=0" width="624" height="600px">
+</iframe>
+</div>
+<p>A web app featuring a map of the Austin Bcycle system and available bikes, as well as data visualizations on when and where certain bike types will be available. Serves as a companion web app for an in-development Alexa skill of the same name, allowing Austin Bcycle commuters to conveniently check their home station, plan their commute, and predict when bikes or docks will be available.</p>
+<p>Inspired by my own experience as an Austin Bcycle commuter during the summer of 2021.</p>
 <h3 id="princeton-room-draw-2021">Princeton Room Draw 2021</h3>
-<p>A simple web app for Princeton’s annual dorm selection lottery, updated to reflect room changes and additional student populations during COVID-19. Original dorm listings published by Princeton Housing used an unorganized pdf of room listings; this web app simplified the process by allowing sorting by room type, square footage, and college affiliation, as well as allowing students to check their status in the lottery.</p>
+<p>A simple web app published during Princeton’s annual dorm selection lottery, updated to reflect room changes and additional student populations during COVID-19. Original dorm listings published by Princeton Housing used an unorganized pdf of room listings; this web app simplified the process by allowing sorting by room type, square footage, and college affiliation, as well as allowing students to check their status in the lottery.</p>
 <p>With the end of Room Draw in June, app is no longer in development; current deployment displays model rooms and removes student ID functionality to preserve privacy. Heroku deployment available <a href="http://roomdraw2021.herokuapp.com">here</a>.</p>
+<h3 id="kaggle-tabular-playground-series-july-2021">Kaggle Tabular Playground Series July 2021</h3>
+<p>For Kaggle’s Tabular Playground Series July 2021 machine learning competition, I wrote a full solution in R using tidy principles, including time series analysis, feature engineering, and modeling, that placed in the top 30% (at time of posting). The model was an ensemble between a hyperparameter-tuned boosted tree (XGBoost) and Random Forest (ranger) to predict carbon, benzene, and nitrogen oxide pollution based on weather sensor data.</p>
+<p>Code available <a href="https://benidjones.github.io/weather_solution-copy.html">here</a>.</p>
+<h3 id="seam-carver">Seam Carver</h3>
+<p>A Java program to implement the seam carver algorithm for content-aware image resizing on a .jpg or .png file using a modified topological sort and edge relaxation procedure. This algorithm runs in linear time wrt the number of pixels in the image file.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
