@@ -455,7 +455,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </style>
 
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
   <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -2369,7 +2369,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.8/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2436,10 +2436,201 @@ Projects
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
+<li><a href="#power-in-public-spheres">Power in Public Spheres</a></li>
 <li><a href="#ex-ante-moral-hazard-in-health-insurance"><em>Ex Ante</em> Moral Hazard in Health Insurance</a></li>
 </ul>
 </nav>
 </div>
+<h1 id="power-in-public-spheres">Power in Public Spheres</h1>
+<table style="text-align:center">
+<caption>
+<strong>Fixed-Effects Instrumental Variables Regression, Robust Standard Errors</strong>
+</caption>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+<em>Dependent variable:</em>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="1" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+state_prop
+</td>
+<td>
+-0.022
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.417)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+rpp
+</td>
+<td>
+-0.002
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.001)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+log(pop_young)
+</td>
+<td>
+0.035
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.070)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+legis_controlRep
+</td>
+<td>
+0.0002
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.003)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+legis_controlSplit
+</td>
+<td>
+0.003
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.003)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+log(employees)
+</td>
+<td>
+-0.007
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.006)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td style="text-align:right">
+<sup><em></sup>p&lt;0.1; <sup><strong></sup>p&lt;0.05; <sup></strong></em></sup>p&lt;0.01
+</td>
+</tr>
+</table>
+<p>Second stage: <span class="math display">\[\begin{equation}
+\begin{aligned}
+FundsAlloc_{st} &amp;= \beta{}_0 + \beta{}_1(\widehat{X_{PropHiIncome}})_{st} + \beta{}_2(RPP_{st}) + 
+\beta{}_3(Young Pop_{st}) + \beta{}_4(Extract Employees_{st})\\
+&amp; + \beta_5{}(GOP Legis_{st}) + \beta_6{}(Split Legis_{st}) + \gamma{}_s + \lambda{}_t + \epsilon
+\end{aligned}
+\end{equation}\]</span></p>
+<p>First stage: <span class="math display">\[\begin{equation}
+\begin{aligned}
+(X_{PropHiIncome})_{st} &amp;= \nu{}_0 + \nu{}_1(RPP_{st}) + \nu_2{}(Young Pop_{st}) + 
+\nu{}_3(Extract Employees_{st})  \\
+&amp; + \nu{}_4(GOPLegis_{st}) + \nu{}_5(Split Legis_{st}) + \nu{}_6(Z_{Extract GDP})_{st} + \mu{}_s+ \rho{}_t + \epsilon
+\end{aligned}
+\end{equation}\]</span></p>
+<p>Following Doyle (2007), I use Instrumental Variables regression (using proportion of state GDP allocated to natural resources as an instrument) to estimate the causal effect of increased votership by upper-middle class Americans on proportion of state funds allocated to public higher education. I find no significant causal effect (<span class="math inline">\(p &gt; 0.1\)</span>), despite evidence that upper-middle class Americans are disproportionately more likely to benefit from spending on public higher education.</p>
 <h1 id="ex-ante-moral-hazard-in-health-insurance"><em>Ex Ante</em> Moral Hazard in Health Insurance</h1>
 <table style="text-align:center">
 <caption>
