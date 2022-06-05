@@ -86,29 +86,29 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>John Kim: Coding</title>
+  <title>John Kim: Data Analysis</title>
 
-  <meta property="description" itemprop="description" content="A portolio of selected programming projects I&#39;ve completed."/>
+  <meta property="description" itemprop="description" content="A portolio of selected data projects I&#39;ve completed."/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="John Kim: Coding"/>
+  <meta property="og:title" content="John Kim: Data Analysis"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="A portolio of selected programming projects I&#39;ve completed."/>
+  <meta property="og:description" content="A portolio of selected data projects I&#39;ve completed."/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="John Kim"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="John Kim: Coding"/>
-  <meta property="twitter:description" content="A portolio of selected programming projects I&#39;ve completed."/>
+  <meta property="twitter:title" content="John Kim: Data Analysis"/>
+  <meta property="twitter:description" content="A portolio of selected data projects I&#39;ve completed."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Coding"]},{"type":"character","attributes":{},"value":["A portolio of selected programming projects I've completed.\n"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc"]}},"value":[{"type":"logical","attributes":{},"value":[true]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Data Analysis"]},{"type":"character","attributes":{},"value":["A portolio of selected data projects I've completed.\n"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc"]}},"value":[{"type":"logical","attributes":{},"value":[true]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2389,7 +2389,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Coding","description":"A portolio of selected programming projects I've completed.","authors":[]}
+{"title":"Data Analysis","description":"A portolio of selected data projects I've completed.","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2424,10 +2424,10 @@ Projects
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Coding</h1>
+<h1>Data Analysis</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>A portolio of selected programming projects I’ve completed.</p></p>
+<p><p>A portolio of selected data projects I’ve completed.</p></p>
 </div>
 
 
@@ -2436,25 +2436,591 @@ Projects
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#austin-bikeshare">Austin Bikeshare</a></li>
-<li><a href="#princeton-room-draw-2021">Princeton Room Draw 2021</a></li>
-<li><a href="#kaggle-tabular-playground-series-july-2021">Kaggle Tabular Playground Series July 2021</a></li>
+<li><a href="#power-in-public-spheres">Power in Public Spheres</a></li>
+<li><a href="#ex-ante-moral-hazard-in-health-insurance"><em>Ex Ante</em> Moral Hazard in Health Insurance</a></li>
 </ul>
 </nav>
 </div>
-<h3 id="austin-bikeshare">Austin Bikeshare</h3>
-<div class="layout-chunk" data-layout="l-body">
-<iframe src="https://benidjones.shinyapps.io/austin_bikeshare/?showcase=0" width="624" height="600px">
-</iframe>
-</div>
-<p>A web app featuring a map of the Austin Bcycle system and available bikes, as well as data visualizations on when and where certain bike types will be available. Serves as a companion web app for an in-development Alexa skill of the same name, allowing Austin Bcycle commuters to conveniently check their home station, plan their commute, and predict when bikes or docks will be available.</p>
-<p>Inspired by my own experience as an Austin Bcycle commuter during the summer of 2021.</p>
-<h3 id="princeton-room-draw-2021">Princeton Room Draw 2021</h3>
-<p>A simple web app published during Princeton’s annual dorm selection lottery, updated to reflect room changes and additional student populations during COVID-19. Original dorm listings published by Princeton Housing used an unorganized pdf of room listings; this web app simplified the process by allowing sorting by room type, square footage, and college affiliation, as well as allowing students to check their status in the lottery.</p>
-<p>With the end of Room Draw in June, app is no longer in development; current deployment displays model rooms and removes student ID functionality to preserve privacy. Heroku deployment available <a href="http://roomdraw2021.herokuapp.com">here</a>.</p>
-<h3 id="kaggle-tabular-playground-series-july-2021">Kaggle Tabular Playground Series July 2021</h3>
-<p>For Kaggle’s Tabular Playground Series July 2021 machine learning competition, I wrote a full solution in R using tidy principles, including time series analysis, feature engineering, and modeling, that placed in the top 30% (at time of posting). The model was an ensemble between a hyperparameter-tuned boosted tree (XGBoost) and Random Forest (ranger) to predict carbon, benzene, and nitrogen oxide pollution based on weather sensor data.</p>
-<p>Code available <a href="https://benidjones.github.io/weather_solution-copy.html">here</a>.</p>
+<h1 id="power-in-public-spheres">Power in Public Spheres</h1>
+<table style="text-align:center">
+<caption>
+<strong>Fixed-Effects Instrumental Variables Regression, Robust Standard Errors</strong>
+</caption>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+<em>Dependent variable:</em>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="1" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+state_prop
+</td>
+<td>
+-0.022
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.417)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+rpp
+</td>
+<td>
+-0.002
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.001)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+log(pop_young)
+</td>
+<td>
+0.035
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.070)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+legis_controlRep
+</td>
+<td>
+0.0002
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.003)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+legis_controlSplit
+</td>
+<td>
+0.003
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.003)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+log(employees)
+</td>
+<td>
+-0.007
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.006)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td style="text-align:right">
+<sup><em></sup>p&lt;0.1; <sup><strong></sup>p&lt;0.05; <sup></strong></em></sup>p&lt;0.01
+</td>
+</tr>
+</table>
+<p>Second stage: <span class="math display">\[\begin{equation}
+\begin{aligned}
+FundsAlloc_{st} &amp;= \beta{}_0 + \beta{}_1(\widehat{X_{PropHiIncome}})_{st} + \beta{}_2(RPP_{st}) + 
+\beta{}_3(Young Pop_{st}) + \beta{}_4(Extract Employees_{st})\\
+&amp; + \beta_5{}(GOP Legis_{st}) + \beta_6{}(Split Legis_{st}) + \gamma{}_s + \lambda{}_t + \epsilon
+\end{aligned}
+\end{equation}\]</span></p>
+<p>First stage: <span class="math display">\[\begin{equation}
+\begin{aligned}
+(X_{PropHiIncome})_{st} &amp;= \nu{}_0 + \nu{}_1(RPP_{st}) + \nu_2{}(Young Pop_{st}) + 
+\nu{}_3(Extract Employees_{st})  \\
+&amp; + \nu{}_4(GOPLegis_{st}) + \nu{}_5(Split Legis_{st}) + \nu{}_6(Z_{Extract GDP})_{st} + \mu{}_s+ \rho{}_t + \epsilon
+\end{aligned}
+\end{equation}\]</span></p>
+<p>Following Doyle (2007), I use Instrumental Variables regression (using proportion of state GDP allocated to natural resources as an instrument) to estimate the causal effect of increased votership by upper-middle class Americans on proportion of state funds allocated to public higher education. I find no significant causal effect (<span class="math inline">\(p &gt; 0.1\)</span>), despite evidence that upper-middle class Americans are disproportionately more likely to benefit from spending on public higher education.</p>
+<h1 id="ex-ante-moral-hazard-in-health-insurance"><em>Ex Ante</em> Moral Hazard in Health Insurance</h1>
+<table style="text-align:center">
+<caption>
+<strong>Logistic Regression for Models, Odds (Column 3 is Full Model)</strong>
+</caption>
+<tr>
+<td colspan="5" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="4">
+<em>Dependent variable:</em>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="4" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="4">
+drugUse
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1)
+</td>
+<td>
+(2)
+</td>
+<td>
+(3)
+</td>
+<td>
+(4)
+</td>
+</tr>
+<tr>
+<td colspan="5" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+insurance
+</td>
+<td>
+0.714<sup>**</sup> (0.097)
+</td>
+<td>
+0.751<sup>*</sup> (0.110)
+</td>
+<td>
+0.802 (0.127)
+</td>
+<td>
+0.637<sup>**</sup> (0.132)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+prevDrugUse
+</td>
+<td>
+</td>
+<td>
+4.449<sup>***</sup> (0.639)
+</td>
+<td>
+3.984<sup>***</sup> (0.604)
+</td>
+<td>
+2.907<sup>***</sup> (0.690)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+I(insurance * prevDrugUse)
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+1.688<sup>*</sup> (0.520)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+hispanic
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+0.717 (0.163)
+</td>
+<td>
+0.728 (0.165)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+white
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+1.976 (0.823)
+</td>
+<td>
+2.044<sup>*</sup> (0.856)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+black
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+0.528 (0.232)
+</td>
+<td>
+0.548 (0.242)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+native
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+1.262 (0.445)
+</td>
+<td>
+1.268 (0.448)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+asian
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+1.320 (0.650)
+</td>
+<td>
+1.326 (0.657)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+christian
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+0.645<sup>***</sup> (0.105)
+</td>
+<td>
+0.650<sup>***</sup> (0.106)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+muslim
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+0.00000 (0.001)
+</td>
+<td>
+0.00000 (0.001)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+buddhist
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+0.576 (0.761)
+</td>
+<td>
+0.546 (0.728)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+male
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+1.783<sup>***</sup> (0.272)
+</td>
+<td>
+1.815<sup>***</sup> (0.278)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+income
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+0.984 (0.029)
+</td>
+<td>
+0.985 (0.029)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+stress
+</td>
+<td>
+</td>
+<td>
+0.944 (0.061)
+</td>
+<td>
+0.993 (0.070)
+</td>
+<td>
+0.999 (0.070)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+age
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+1.067 (0.046)
+</td>
+<td>
+1.065 (0.046)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Constant
+</td>
+<td>
+0.899 (0.095)
+</td>
+<td>
+0.500<sup>***</sup> (0.080)
+</td>
+<td>
+0.055<sup>**</sup> (0.074)
+</td>
+<td>
+0.063<sup>**</sup> (0.086)
+</td>
+</tr>
+<tr>
+<td colspan="5" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Observations
+</td>
+<td>
+935
+</td>
+<td>
+935
+</td>
+<td>
+935
+</td>
+<td>
+935
+</td>
+</tr>
+<tr>
+<td colspan="5" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td colspan="4" style="text-align:right">
+<sup>*</sup>p&lt;0.1; <sup>**</sup>p&lt;0.05; <sup>***</sup>p&lt;0.01
+</td>
+</tr>
+</table>
+<table border="1">
+<caption align="bottom">
+ANOVA Test: Full Model vs. Full Model + Interaction Term
+</caption>
+<tr>
+<th>
+</th>
+<th>
+Resid. Df
+</th>
+<th>
+Resid. Dev
+</th>
+<th>
+Df
+</th>
+<th>
+Deviance
+</th>
+<th>
+Pr(&gt;Chi)
+</th>
+</tr>
+<tr>
+<td>
+1
+</td>
+<td align="right">
+920
+</td>
+<td align="right">
+1073.88
+</td>
+<td align="right">
+</td>
+<td align="right">
+</td>
+<td align="right">
+</td>
+</tr>
+<tr>
+<td>
+2
+</td>
+<td align="right">
+919
+</td>
+<td align="right">
+1070.97
+</td>
+<td align="right">
+1
+</td>
+<td align="right">
+2.91
+</td>
+<td align="right">
+0.0895
+</td>
+</tr>
+</table>
+<p>Using data from the National Longitudinal Study of Adolescent to Adult Health (Add Health), I use Covariate Balancing Propensity Score matching (<a href="https://imai.fas.harvard.edu/research/files/CBPS.pdf">Imai and Ratkovic, 2014</a>) alongside logistic regression to evaluate whether gaining health insurance was associated with any increase in illegal drug use, a common form of risky health behavior, among American adults. I find that gaining health insurance was not associated with any increase in odds of illegal drug use at a statistically significant level (<span class="math inline">\(p&gt;0.1\)</span>), controlling for previous drug use, stress, income, race, sex, and age. Using an analysis-of-variance (ANOVA) test, I conclude that models with interaction terms do not explain more variation at a statistically significant level (<span class="math inline">\(Chi&gt;0.08\)</span>).</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
@@ -2463,6 +3029,15 @@ Projects
 <div class="d-appendix">
 </div>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
