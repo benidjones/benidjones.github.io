@@ -1,0 +1,102 @@
+---
+title: "Stuff I've Worked On"
+description: |
+  A portolio of selected projects I've worked on, in personal, professional, and academic contexts.
+output: 
+  distill::distill_article:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Shaping What Consumers Purchase
+(w/ Kazim Habib, MPA and Musab Almajnouni, M.Eng)
+
+We research the status quo of American, European, and Canadian policy on self-preferencing practices by tech companies as it relates to antitrust and consumer protection law. Then, we introduce a research design to investigate and analyze self-preferencing practices by Amazon Marketplace. Finally, we lay out several policy proposals intended to reduce consumer deception in self-preferencing practices as well as encourage the release of data by companies to promote transparency in the effects of self-preferencing on consumer surplus. 
+
+A link to the paper is available [here](https://benidjones.github.io/images/selfprefpaper.pdf). 
+
+# Power in Public Spheres
+
+<table style="text-align:center"><caption><strong>Fixed-Effects Instrumental Variables Regression, Robust Standard Errors</strong></caption>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="1" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">state_prop</td><td>-0.022</td></tr>
+<tr><td style="text-align:left"></td><td>(0.417)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">rpp</td><td>-0.002</td></tr>
+<tr><td style="text-align:left"></td><td>(0.001)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">log(pop_young)</td><td>0.035</td></tr>
+<tr><td style="text-align:left"></td><td>(0.070)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">legis_controlRep</td><td>0.0002</td></tr>
+<tr><td style="text-align:left"></td><td>(0.003)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">legis_controlSplit</td><td>0.003</td></tr>
+<tr><td style="text-align:left"></td><td>(0.003)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">log(employees)</td><td>-0.007</td></tr>
+<tr><td style="text-align:left"></td><td>(0.006)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>
+
+Second stage: 
+\begin{equation}
+\begin{aligned}
+FundsAlloc_{st} &= \beta{}_0 + \beta{}_1(\widehat{X_{PropHiIncome}})_{st} + \beta{}_2(RPP_{st}) + 
+\beta{}_3(Young Pop_{st}) + \beta{}_4(Extract Employees_{st})\\
+& + \beta_5{}(GOP Legis_{st}) + \beta_6{}(Split Legis_{st}) + \gamma{}_s + \lambda{}_t + \epsilon
+\end{aligned}
+\end{equation}
+
+First stage: 
+\begin{equation}
+\begin{aligned}
+(X_{PropHiIncome})_{st} &= \nu{}_0 + \nu{}_1(RPP_{st}) + \nu_2{}(Young Pop_{st}) + 
+\nu{}_3(Extract Employees_{st})  \\
+& + \nu{}_4(GOPLegis_{st}) + \nu{}_5(Split Legis_{st}) + \nu{}_6(Z_{Extract GDP})_{st} + \mu{}_s+ \rho{}_t + \epsilon
+\end{aligned}
+\end{equation}
+
+Following Doyle (2007), I use Instrumental Variables regression (using proportion of state GDP allocated to natural resources as an instrument) to estimate the causal effect of increased votership by upper-middle class Americans on proportion of state funds allocated to public higher education. I find no significant causal effect ($p > 0.1$), despite evidence that upper-middle class Americans are disproportionately more likely to benefit from spending on public higher education. 
+
+# _Ex Ante_ Moral Hazard in Health Insurance
+
+<table style="text-align:center"><caption><strong>Logistic Regression for Models, Odds (Column 3 is Full Model)</strong></caption>
+<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="4"><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="4" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td colspan="4">drugUse</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td></tr>
+<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">insurance</td><td>0.714<sup>**</sup> (0.097)</td><td>0.751<sup>*</sup> (0.110)</td><td>0.802 (0.127)</td><td>0.637<sup>**</sup> (0.132)</td></tr>
+<tr><td style="text-align:left">prevDrugUse</td><td></td><td>4.449<sup>***</sup> (0.639)</td><td>3.984<sup>***</sup> (0.604)</td><td>2.907<sup>***</sup> (0.690)</td></tr>
+<tr><td style="text-align:left">I(insurance * prevDrugUse)</td><td></td><td></td><td></td><td>1.688<sup>*</sup> (0.520)</td></tr>
+<tr><td style="text-align:left">hispanic</td><td></td><td></td><td>0.717 (0.163)</td><td>0.728 (0.165)</td></tr>
+<tr><td style="text-align:left">white</td><td></td><td></td><td>1.976 (0.823)</td><td>2.044<sup>*</sup> (0.856)</td></tr>
+<tr><td style="text-align:left">black</td><td></td><td></td><td>0.528 (0.232)</td><td>0.548 (0.242)</td></tr>
+<tr><td style="text-align:left">native</td><td></td><td></td><td>1.262 (0.445)</td><td>1.268 (0.448)</td></tr>
+<tr><td style="text-align:left">asian</td><td></td><td></td><td>1.320 (0.650)</td><td>1.326 (0.657)</td></tr>
+<tr><td style="text-align:left">christian</td><td></td><td></td><td>0.645<sup>***</sup> (0.105)</td><td>0.650<sup>***</sup> (0.106)</td></tr>
+<tr><td style="text-align:left">muslim</td><td></td><td></td><td>0.00000 (0.001)</td><td>0.00000 (0.001)</td></tr>
+<tr><td style="text-align:left">buddhist</td><td></td><td></td><td>0.576 (0.761)</td><td>0.546 (0.728)</td></tr>
+<tr><td style="text-align:left">male</td><td></td><td></td><td>1.783<sup>***</sup> (0.272)</td><td>1.815<sup>***</sup> (0.278)</td></tr>
+<tr><td style="text-align:left">income</td><td></td><td></td><td>0.984 (0.029)</td><td>0.985 (0.029)</td></tr>
+<tr><td style="text-align:left">stress</td><td></td><td>0.944 (0.061)</td><td>0.993 (0.070)</td><td>0.999 (0.070)</td></tr>
+<tr><td style="text-align:left">age</td><td></td><td></td><td>1.067 (0.046)</td><td>1.065 (0.046)</td></tr>
+<tr><td style="text-align:left">Constant</td><td>0.899 (0.095)</td><td>0.500<sup>***</sup> (0.080)</td><td>0.055<sup>**</sup> (0.074)</td><td>0.063<sup>**</sup> (0.086)</td></tr>
+<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>935</td><td>935</td><td>935</td><td>935</td></tr>
+<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="4" style="text-align:right"><sup>&ast;</sup>p<0.1; <sup>&ast;&ast;</sup>p<0.05; <sup>&ast;&ast;&ast;</sup>p<0.01</td></tr>
+</table>
+
+<table border=1>
+<caption align="bottom"> ANOVA Test: Full Model vs. Full Model + Interaction Term </caption>
+<tr> <th>  </th> <th> Resid. Df </th> <th> Resid. Dev </th> <th> Df </th> <th> Deviance </th> <th> Pr(&gt;Chi) </th>  </tr>
+  <tr> <td> 1 </td> <td align="right"> 920 </td> <td align="right"> 1073.88 </td> <td align="right">  </td> <td align="right">  </td> <td align="right">  </td> </tr>
+  <tr> <td> 2 </td> <td align="right"> 919 </td> <td align="right"> 1070.97 </td> <td align="right"> 1 </td> <td align="right"> 2.91 </td> <td align="right"> 0.0895 </td> </tr>
+   </table>
+
+Using data from the National Longitudinal Study of Adolescent to Adult Health (Add Health), I use Covariate Balancing Propensity Score matching ([Imai and Ratkovic, 2014](https://imai.fas.harvard.edu/research/files/CBPS.pdf)) alongside logistic regression to evaluate whether gaining health insurance was associated with any increase in illegal drug use, a common form of risky health behavior, among American adults. I find that gaining health insurance was not associated with any increase in odds of illegal drug use at a statistically significant level ($p>0.1$), controlling for previous drug use, stress, income, race, sex, and age. Using an analysis-of-variance (ANOVA) test, I conclude that models with interaction terms do not explain more variation at a statistically significant level ($Chi>0.08$).
